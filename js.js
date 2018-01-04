@@ -18,10 +18,29 @@ document.addEventListener("DOMContentLoaded", function() {
     menu.addEventListener('mouseout', hideSubmenu);
 
 
+//Najezdzanie myszą na obrazki
 
+    var box1 = document.querySelector('.boxes__box');
+    var box2 = document.querySelector('.boxes__box:nth-child(2)');
 
+    var title = document.querySelectorAll('.boxes__box');
 
+    function hideTitle() {
+        for (var i =0; i < title.length; i++) {
+            this.firstElementChild.classList.add('box_hide');
+        }
+    }
 
+    function showTitle() {
+        for (var i=0; i < title.length; i++) {
+            this.firstElementChild.classList.remove('box_hide');
+        }
+    }
+
+    box1.addEventListener('mouseover', hideTitle);
+    box1.addEventListener('mouseout', showTitle);
+    box2.addEventListener('mouseover', hideTitle);
+    box2.addEventListener('mouseout', showTitle);
 
 
 

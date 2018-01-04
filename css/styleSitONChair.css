@@ -256,6 +256,9 @@ section {
     margin-top: 20px;
 }
 
+.boxes__box .box_hide {
+    visibility: hidden;
+}
 
 
 /* Sekcja CENNIK*/
