@@ -61,70 +61,57 @@ header.main-header {
     color: #26bca3;
     font-weight: 600;
 }
-
-nav {
+nav ul {
     float: right;
+    line-height: 41px;
 }
+
 nav ul li {
     display: inline-block;
-    margin-right: 40px;
+    text-transform: uppercase;
+    padding-left: 26px;
+    font-size: 13px;
+    letter-spacing: 1px;
 }
-
-nav ul li:last-child {
-    margin-right: 0;
-}
-
 nav ul li a {
     color: #fff;
     font-size: 13px;
     font-weight: 600;
     text-transform: uppercase;
 }
-.menu > li {
-    position: relative;
-}
-.submenu {
-    position: absolute;
-    top: 100%;
-    background: transparent;
-    min-width: 160px;
-    padding-top: 20px;
-    z-index: 2;
+.submenu{
     display: none;
-    left: -50%;
-    margin-left: -25px;
-    text-align: center;
-}
-.submenu > li:first-child {
-    position: relative;
-}
-.submenu > li:first-child::before {
-    width: 0;
-    height: 0;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-bottom: 7px solid #000;
-    position: absolute;
-    content: '';
-    top: -7px;
-    left: 50%;
-    margin-left: -5px;
-}
-.menu > li:hover .submenu{
-    display: block;
 }
 
-.submenu > li {
+.submenu.show{
+    top: 60px;
+    right: 240px;
     display: block;
-    margin-right: 0;
-    background: #000;
-    padding: 15px;
-    line-height: 20px;
-    transition: all 0.2s ease-in-out;
+    z-index: 11;
+    position: fixed;
+    height: 120px;
+    width: 140px;
+    text-align: left;
+    background-color: #000000;
 }
-.submenu > li:hover {
-    background: #363636;
+.submenu > li:first-child::before {
+    content: '';
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    top: -20px;
+    right: 60px;
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 26px solid black;
 }
+
+section {
+    width: 100%;
+}
+
 
 /* Sekcja SLIDER*/
 

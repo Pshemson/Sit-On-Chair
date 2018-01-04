@@ -18,17 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
     menu.addEventListener('mouseout', hideSubmenu);
 
 
-    .submenu.show {
-        top: 60px;
-        right: 240px;
-        z-index: 11;
-        display: block;
-        height: 120px;
-        width: 140px;
-        position: fixed;
-        text-align: left;
-        background-color: black;
-    }
+
 
 
 
