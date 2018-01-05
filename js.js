@@ -52,26 +52,27 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     prevSlide.style.color = "#c6c6c6";
 
-    nextSlide.addEventListener('click', function(event) {
+    nextSlide.addEventListener('click', function(event){
         if (counter <= allSlides.length - 2) {
             allSlides[counter].style.marginLeft = "-100%";
             counter++;
-            if (counter < allSlides.length - 1) {
-                prevSlide.style.color = "24ba9f";
+            if (counter < allSlides.length -1) {
+                prevSlide.style.color = "#24ba9f";
             } else {
-                this.style.color = "c6c6c6";
+                this.style.color = "#c6c6c6";
             }
         }
-    });
 
-    prevSlide.addEventListener('click', function(event) {
+
+    });
+    prevSlide.addEventListener('click', function(event){
         if (counter <= (allSlides.length - 1) && counter >= 1) {
             --counter;
             allSlides[counter].style.marginLeft = "0";
             if (counter < allSlides.length && counter >= 1) {
-                nextSlide.style.color = "24ba9f";
+                nextSlide.style.color = "#24ba9f";
             } else {
-                this.style.color = "c6c6c6";
+                this.style.color = "#c6c6c6";
             }
         }
     });
