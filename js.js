@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function (event) {
 
     //Rozsuwane menu
-    var menu = document.querySelector(".menu:first-of-type");
+    var menu = document.querySelector(".menu li:first-of-type");
     var submenu = document.querySelector(".submenu");
 
     function showSubmenu() {
