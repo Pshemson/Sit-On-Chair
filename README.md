@@ -1,4 +1,4 @@
-My first website.
+My first website (in progress).
 
 Simple project from CodersLab bootcamp. 
 
